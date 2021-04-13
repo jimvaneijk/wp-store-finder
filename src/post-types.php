@@ -124,7 +124,7 @@ add_action('save_post', 'sf_save_meta_box');
 function geocode($address)
 {
     $address = urlencode($address);
-    $apiKey = env('WP_STORE_FINDER_GOOGLE_API');
+    $apiKey = \Env\env('WP_STORE_FINDER_GOOGLE_API');
     $url = "https://maps.googleapis.com/maps/api/geocode/json?address={$address}&key={$apiKey}";
     $json = file_get_contents($url);
     $response = json_decode($json, true);

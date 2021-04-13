@@ -70,7 +70,7 @@ add_action('rest_api_init', function () {
     ));
 });
 
-if (env('ACCEPT_IMPORT', false)) {
+if (\Env\env('ACCEPT_IMPORT', false)) {
     add_action('rest_api_init', function () {
         register_rest_route('wp-store-finder/v1', 'import', array(
             'methods'  => 'GET',
