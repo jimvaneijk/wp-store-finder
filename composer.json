@@ -1,0 +1,13 @@
+{
+  "name": "jimvaneijk/wp-store-finder",
+  "description": "This plugin gives you the opportunity to add store to a map so customers can explore where you are located.",
+  "type": "wordpress-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jim van Eijk",
+      "email": "jim@23g.nl"
+    }
+  ],
+  "minimum-stability": "stable"
+}
